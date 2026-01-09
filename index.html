@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MindGPT é um bot de IA avançado para Discord com conversas humanas, moderação inteligente e geração de conteúdo.">
+<title>MindGPT • Bot de IA para Discord</title>
+
+<style>
+:root {
+  --bg: #0d0f16;
+  --bg2: #14182a;
+  --primary: #7b7bff;
+  --secondary: #4da6ff;
+  --text: #f1f1f6;
+  --muted: #9aa3c7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, var(--bg), var(--bg2));
+  color: var(--text);
+  scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  background: rgba(13,15,22,0.85);
+  backdrop-filter: blur(8px);
+  padding: 18px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #222;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+nav a {
+  margin-left: 24px;
+  text-decoration: none;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* HERO */
+.hero {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 820px;
+  margin: auto;
+  font-size: 18px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.hero-buttons {
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 14px 30px;
+  border-radius: 12px;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 10px;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-outline {
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+/* SECTIONS */
+section {
+  padding: 90px 60px;
+}
+
+.title {
+  font-size: 36px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  max-width: 700px;
+  color: var(--muted);
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #1b2040;
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid #2a2f5a;
+}
+
+.card h3 {
+  margin-bottom: 12px;
+}
+
+/* FAQ */
+.faq details {
+  background: #1b2040;
+  border-radius: 14px;
+  padding: 18px;
+  margin-bottom: 14px;
+  border: 1px solid #2a2f5a;
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.faq p {
+  margin-top: 10px;
+  color: var(--muted);
+}
+
+/* FOOTER */
+footer {
+  background: #0a0c12;
+  padding: 50px 60px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+footer h4 {
+  margin-bottom: 14px;
+}
+
+footer p, footer a {
+  font-size: 14px;
+  color: var(--muted);
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">MindGPT</div>
+  <nav>
+    <a href="#home">Lar</a>
+    <a href="#features">Características</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h1>MindGPT</h1>
+  <p>
+    Um bot de inteligência artificial avançado para Discord, criado para conversar como humano,
+    moderar servidores, gerar conteúdo e responder em tempo real.
+  </p>
+
+  <div class="hero-buttons">
+    <!-- ADICIONAR BOT -->
+    <a href="https://discord.com/oauth2/authorize?client_id=1445183244839550997&scope=bot%20applications.commands&permissions=8"
+       target="_blank"
+       class="btn btn-primary">
+       Adicionar ao Discord
+    </a>
+
+    <!-- SERVIDOR -->
+    <a href="https://discord.gg/EFG2J7pg"
+       target="_blank"
+       class="btn btn-outline">
+       Junte-se ao Servidor
+    </a>
+  </div>
+</section>
+
+<section id="features">
+  <h2 class="title">Características</h2>
+  <p class="subtitle">Tudo que seu servidor precisa em um único bot.</p>
+
+  <div class="grid">
+    <div class="card">
+      <h3>IA Avançada</h3>
+      <p>Respostas inteligentes, contextuais e naturais usando inteligência artificial.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <h2 class="title">Perguntas Frequentes</h2>
+
+  <details>
+    <summary>O MindGPT é gratuito?</summary>
+    <p>Sim, o MindGPT é totalmente gratuito e pode ser usado em qualquer servidor.</p>
+  </details>
+
+  <details>
+    <summary>Ele usa IA real?</summary>
+    <p>Sim, utiliza modelos avançados de inteligência artificial.</p>
+  </details>
+
+  <details>
+    <summary>Meus dados estão seguros?</summary>
+    <p>Sim, respeitamos sua privacidade e não vendemos dados.</p>
+  </details>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4>MindGPT</h4>
+      <p>Bot de IA avançado para Discord.</p>
+    </div>
+
+    <div>
+      <h4>Créditos</h4>
+      <p>Desenvolvida pela <strong>Equipe MindAI Technology</strong></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
